@@ -14,6 +14,8 @@
 
 [*LinkedIn*](https://www.linkedin.com/in/burak-bekci-129b1514b/)
 
+
+### Prerequisities
 1. Basic knowledge about any programming language.
 2. Android Studio (Version 3.0 or newer Note:Latest release is 3.2.1)
 
@@ -42,5 +44,8 @@ The aim of this study group is to learn the fundamentals of the Android Applicat
 [TryKotlin](try.kotlinlang.org) - If you want to try kotlin without any installation or if you want to practice 
 [Android Studio](https://developer.android.com/studio/) Offical download adress of the Android Studio
 [Android Developers](https://developer.android.com/docs/) First website that you will need while developing applications
+
+# Suggested Readings
+Will be added at each week..
 
 
