@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
     // But assigning mutablelist to immutable is not allowed. Use toList function to convert mutable to immutable
 
     /* Set */
-    // Set doesn't allow duplicate but lists do
+    // Set doesn't allow duplicate but list does
 
     var set1: Set<Int> = setOf(2, 2, 5, 7, 2, 9)
     var set2: MutableSet<Int> = mutableSetOf(2, 2, 4)
