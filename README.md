@@ -41,7 +41,7 @@ The aim of this study group is to learn the fundamentals of the Android Applicat
 <p align="center"><b>Lessons will be around 1:30 - 2 hours</b></p>
 
 # Important Links
-[TryKotlin](try.kotlinlang.org) - If you want to try kotlin without any installation or if you want to practice  
+[TryKotlin](https://try.kotlinlang.org) - If you want to try kotlin without any installation or if you want to practice  
 [Android Studio](https://developer.android.com/studio/) Offical download adress of the Android Studio  
 [Android Developers](https://developer.android.com/docs/) First website that you will need while developing applications  
 
