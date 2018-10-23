@@ -27,7 +27,7 @@ The aim of this study group is to learn the fundamentals of the Android Applicat
 
 | Week               | Topic                                                        |
 | :----------------- | ------------------------------------------------------------ |
-| Week 1 (25/10/18)  | Kotlin fundamentals (Kotlin vs Java, basic operators, collection types, control flow, functions, , Billion dollar mistake(Null reference)) |
+| Week 1 (25/10/18)  | Kotlin fundamentals (Kotlin vs Java, basic operators, collection types, control flow, functions, Billion dollar mistake(Null reference) ) |
 | Week 2 (01/11/18)  | Kotlin fundamentals (classes, inheritance, higher order functions, Android project structure ) |
 | Week 3 (08/11/18)  | Mid-Break (Holiday)                                          |
 | Week 4 (15/11/18)  | Warm up project - Setting GitHub, XML design, HTTP requests, JSON parsing and table views |
@@ -46,6 +46,8 @@ The aim of this study group is to learn the fundamentals of the Android Applicat
 [Android Developers](https://developer.android.com/docs/) First website that you will need while developing applications  
 
 # Suggested Readings
-Will be added at each week..
+[About advantages and disadavantages about Kotlin](https://medium.com/@octskyward/why-kotlin-is-my-next-programming-language-c25c001e26e3)
+
+[Must read article for Android Developers](https://medium.com/mindorks/a-roadmap-to-become-a-better-android-developer-3038cf7f8c8d)
 
 
