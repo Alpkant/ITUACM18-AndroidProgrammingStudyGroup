@@ -40,6 +40,8 @@ The aim of this study group is to learn the fundamentals of the Android Applicat
 
 <p align="center"><b>Lessons will be around 1:30 - 2 hours</b></p>
 
+(Lectures will be in ITU Faculty of Chemical and Metallurgical Engineering classroom D205 at every Thursday 17.30)
+
 # Important Links
 [TryKotlin](https://try.kotlinlang.org) - If you want to try kotlin without any installation or if you want to practice  
 [Android Studio](https://developer.android.com/studio/) Offical download adress of the Android Studio  
