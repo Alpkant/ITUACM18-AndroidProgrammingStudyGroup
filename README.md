@@ -27,16 +27,16 @@ The aim of this study group is to learn the fundamentals of the Android Applicat
 
 | Week               | Topic                                                        |
 | :----------------- | ------------------------------------------------------------ |
-| Week 1 (24/10/18)  | Kotlin fundamentals (Kotlin vs Java, basic operators, collection types, control flow, functions, , Billion dollar mistake(Null reference)) |
-| Week 2 (31/10/18)  | Kotlin fundamentals (classes, inheritance, higher order functions, Android project structure ) |
-| Week 3 (07/11/18)  | Mid-Break (Holiday)                                          |
-| Week 4 (14/11/18)  | Warm up project - Setting GitHub, XML design, HTTP requests, JSON parsing and table views |
-| Week 5 (21/11/18)  | Notes - Setting up the project, creating, editing and showing notes in a table view |
-| Week 6 (28/11/18)  | Notify - Storing notes on the local storage                  |
-| Week 7 (05/12/18)  | Quizify - Setting up the project, creating questions and answering shuffled questions |
-| Week 8 (12/12/18)  | Quizify - Storing questions on firebase database             |
-| Week 9 (19/12/18)  | Quizify - Authentication with firebase                       |
-| Week 10 (26/12/18) | Quizify - Creating the leaderboard using firebase            |
+| Week 1 (25/10/18)  | Kotlin fundamentals (Kotlin vs Java, basic operators, collection types, control flow, functions, , Billion dollar mistake(Null reference)) |
+| Week 2 (01/11/18)  | Kotlin fundamentals (classes, inheritance, higher order functions, Android project structure ) |
+| Week 3 (08/11/18)  | Mid-Break (Holiday)                                          |
+| Week 4 (15/11/18)  | Warm up project - Setting GitHub, XML design, HTTP requests, JSON parsing and table views |
+| Week 5 (22/11/18)  | Notes - Setting up the project, creating, editing and showing notes in a table view |
+| Week 6 (29/11/18)  | Notify - Storing notes on the local storage                  |
+| Week 7 (06/12/18)  | Quizify - Setting up the project, creating questions and answering shuffled questions |
+| Week 8 (13/12/18)  | Quizify - Storing questions on firebase database             |
+| Week 9 (20/12/18)  | Quizify - Authentication with firebase                       |
+| Week 10 (27/12/18) | Quizify - Creating the leaderboard using firebase            |
 
 <p align="center"><b>Lessons will be around 1:30 - 2 hours</b></p>
 
