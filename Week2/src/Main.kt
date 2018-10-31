@@ -1,10 +1,11 @@
 fun main(args: Array<String>){
-    //example1()
-    //example2()
+    example1()
+    example2()
     example3()
+    example4()
+    example5()
 
 }
-
 
 fun example1(){
     /* This example focus on class attributes
@@ -67,4 +68,47 @@ fun example3(){
     println("Plane has landed.")
     //Second event occurs
     child.getOffFromPlane("Istanbul")
+}
+fun example4(){
+    /*
+    Main topic of this example is high order functions.
+    Calculator.kt is the source code.
+    */
+    val cal = Calculator(80,16,1)
+    val cal1 = Calculator(80,16,2)
+    val cal2 = Calculator(80,16,3)
+    val cal3 = Calculator(80,16,0)
+}
+
+fun example5(){
+    /*
+     Using built-in lambda functions.
+     see Film.kt file.
+     */
+
+
+    // Define a lambda.
+    val func = {println("\nHi I am a function\n")}
+    // Invoke it.
+    func()
+
+    println("\nPrinting a list with forEach")
+    val numberList = mutableListOf<Int>(1,3,6,1,62,4)
+    numberList.forEachIndexed { index, i -> println("Number on $index is $i") }
+
+    val filmList = mutableListOf(Film("AB",3.2f),Film("asa",1.1f),Film("AA",9.1f),Film("V",8.1f))
+
+    println("\nSorting a film list in increasing order by score")
+    filmList.sortBy { it.score }
+    filmList.forEach { println("${it.name}: ${it.score}") }
+
+    println("\nSorting a film list in decreasing order by score")
+    filmList.sortByDescending { it.score }
+    filmList.forEach { println(it.toString()) }
+
+    println("\nFiltering a list")
+    val filteredList = filmList.filter { it.name == "AB" }
+
+    filteredList.forEach { println(it.toString()) }
+
 }
