@@ -6,4 +6,9 @@ class Fish(name : String): Animal(name,EnvironmentEnum.SEA) {
         // This function will do same thing as parent to
         // Thus, there is no need to overrride.
     }
+
+    // Derived class can reach the parents protected attribute.
+    fun printProtected(){
+        println("$procAttr")
+    }
 }

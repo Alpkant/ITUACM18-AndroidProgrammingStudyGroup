@@ -1,6 +1,7 @@
 fun main(args: Array<String>){
     //example1()
-    example2()
+    //example2()
+    example3()
 
 }
 
@@ -47,4 +48,23 @@ fun example2(){
     val fish = Fish("Hamsi")
     fish.printAnimal()
     fish.saySomething()
+    fish.printProtected()
+}
+
+fun example3(){
+    /*
+     Main topic on this example is Interfaces.
+     See Mother.kt, Child.kt and ChildMotherInterface.kt
+     */
+    //Creating objects.
+    val child = Child("Alperen")
+    val mother = Mother(child)
+    //Setting interface objects.
+    mother.setInterface()
+    println("Plane has came to airport. Our child will get on soon.")
+    //First event occurs.
+    child.getOnPlane()
+    println("Plane has landed.")
+    //Second event occurs
+    child.getOffFromPlane("Istanbul")
 }
