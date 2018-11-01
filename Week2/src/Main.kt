@@ -4,7 +4,7 @@ fun main(args: Array<String>){
     example3()
     example4()
     example5()
-
+    example6()
 }
 
 fun example1(){
@@ -41,7 +41,7 @@ fun example1(){
 fun example2(){
     /*
         This example focuses on inheritance.
-        Used files: Animsal.kt, Cat.kt, Fish.kat
+        Used files: Animal.kt, Cat.kt, Fish.kat
      */
     val cat = Cat("Boncuk")
     cat.printAnimal()
@@ -111,4 +111,10 @@ fun example5(){
 
     filteredList.forEach { println(it.toString()) }
 
+}
+
+fun example6(){
+    // Calling a static function from object class.
+    // There is no need to create objects to call a function.
+    println(StringUtil.replaceName("Hi I am Burak","Burak","Alperen"))
 }
