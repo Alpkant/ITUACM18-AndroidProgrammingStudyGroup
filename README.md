@@ -10,7 +10,7 @@
 
 **Burak Bekci**
 
-*Computer Engineering #4 @I.T.U*
+*Computer Engineering #3 @I.T.U*
 
 [*LinkedIn*](https://www.linkedin.com/in/burak-bekci-129b1514b/)
 
