@@ -10,7 +10,6 @@ class Person(var phoneNumber: String, private var name: String, protected val su
     }
     */
 
-
     // Secondary Constructors can be used with initializing call
     constructor(name: String): this("",name,"")
     // Constructor without arguments.
