@@ -46,6 +46,15 @@ fun main(args: Array<String>) {
     println(map1.get(34)) // Print Istanbul
     map2.put(6, "Tokat") // Overrides the current value
     println(map2[6])
+    
+    var list_a = mutableListOf (1,2,6)
+    var list_b = mutableListOf (1,5,2)
+    //Method below assigns reference 
+    // Both lists will be same object
+    list_b = list_a
+    list_a[0] = 6
+    println(list_b)
+  
 
 
 }
