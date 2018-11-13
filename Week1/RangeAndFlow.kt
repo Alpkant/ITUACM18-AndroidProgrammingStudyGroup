@@ -16,8 +16,8 @@ fun main(args: Array<String>) {
         7, 8, 9 -> println("a can be 7,8,9")
         else -> {
             println("a is neither 5 nor 6")
+            println("asdasdasd")
         }
-
     }
 
     /* For Loops */
@@ -54,7 +54,7 @@ fun main(args: Array<String>) {
         println(i)
 
     for (i in 1 until 5) {
-        // i in [1, 5), 10 is excluded
+        // i in [1, 5), 5 is excluded
         println(i)
     }
 }

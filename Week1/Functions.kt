@@ -2,6 +2,7 @@ fun main(args: Array<String>) {
     var a = 6
     var b = 8
     var sum = sumTwoInt(a, b)
+    var sum2 = sumTwoInt('1','2')
     println("sum:$sum a=$a b=$b")
 
     sum = multDefaultArg(a)
@@ -12,13 +13,13 @@ fun main(args: Array<String>) {
 
     fun avg(a: Double, b: Double) = (a + b) / 2
 
-    sumOfNumbers(123,321,412,12) // pass as many as values you want
+    sumOfNumbers(123,123,46,124,2312,412,12) // pass as many as values you want
     val array = intArrayOf(123,321,412,12)
     sumOfNumbers(*array) // Spread operator (*)
 
 }
 
-fun sumTwoInt(a: Int, b: Int): Int {
+fun sumTwoInt(a, b): Int {
     //a++ -> Arguments are from val type so reassigning is not possible
 
     return a + b
