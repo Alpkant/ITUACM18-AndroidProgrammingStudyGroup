@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
 
     println(numberArray[0])
     //println("index 0 numberArray[0] ") -> will produce wrong behaviour
-    println("index 0 : ${numberArray[0]} ")
+    println("index 0 : $numberArray[0] ")
     //println(numberArray[-1]) -> will produce out of bounds exception
     println("index 0 : ${numberArray.get(0)} ")
 

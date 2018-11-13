@@ -1,7 +1,6 @@
 fun main(args: Array<String>): Unit {
 
     /* Val - Var difference */
-
     val val1 = 123
     // val1 = 246 <- Val value cannot be reassigned
     var var1 = 123

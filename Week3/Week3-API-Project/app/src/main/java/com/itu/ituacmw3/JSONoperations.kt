@@ -14,17 +14,30 @@ object JSONoperations {
 
         val jsonObj = JSONObject(jsonRes)
 
-        advice.total_results = (jsonObj.get("total_results") as String).toInt()
-        advice.query = jsonObj.get("query") as String
+        if( !jsonObj.has("total_result") ){
+            return advice
+        }
+        if ( jsonObj.has("total_result"))
+            advice.total_results = (jsonObj.get("total_results") as String).toInt()
 
-        val jsonArr = jsonObj.getJSONArray("slips")
+        if ( jsonObj.has("query"))
+            advice.query = jsonObj.get("query") as String
 
-        for(i in 0 until jsonArr.length()){
-            val slip = Slip()
-            val jsonSlip = jsonArr.getJSONObject(i)
-            slip.advice = jsonSlip.get("advice") as String
-            slip.slip_id = (jsonSlip.get("slip_id") as String).toInt()
-            advice.slips.add(slip)
+        if ( jsonObj.has("slips")){
+
+            val jsonArr = jsonObj.getJSONArray("slips")
+
+            for(i in 0 until jsonArr.length()){
+                val slip = Slip()
+                val jsonSlip = jsonArr.getJSONObject(i)
+
+                if (jsonSlip.has("advice"))
+                    slip.advice = jsonSlip.get("advice") as String
+
+                if (jsonSlip.has("slip_id"))
+                    slip.slip_id = (jsonSlip.get("slip_id") as String).toInt()
+                advice.slips.add(slip)
+            }
         }
 
         return advice
