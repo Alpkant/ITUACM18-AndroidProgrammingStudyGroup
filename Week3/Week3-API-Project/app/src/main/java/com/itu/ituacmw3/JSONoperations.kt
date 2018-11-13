@@ -1,5 +1,6 @@
 package com.itu.ituacmw3
 
+import android.util.Log
 import com.itu.ituacmw3.Models.Advice
 import com.itu.ituacmw3.Models.Slip
 import org.json.JSONArray
@@ -14,11 +15,12 @@ object JSONoperations {
 
         val jsonObj = JSONObject(jsonRes)
 
-        if( !jsonObj.has("total_result") ){
+        if( !jsonObj.has("total_results") ){
             return advice
         }
-        if ( jsonObj.has("total_result"))
+        if ( jsonObj.has("total_results"))
             advice.total_results = (jsonObj.get("total_results") as String).toInt()
+
 
         if ( jsonObj.has("query"))
             advice.query = jsonObj.get("query") as String

@@ -12,9 +12,9 @@ class MainActivity : AppCompatActivity(), ConnectionInterface {
     private lateinit var searchButton: Button
     private lateinit var reSearchButton:Button
     private lateinit var searchContainer:LinearLayout
-    private lateinit var resultContainer: LinearLayout
-    private lateinit var searchedText:TextView
-    private lateinit var resultTextView: TextView
+    private lateinit var resultContainer: RelativeLayout
+    private lateinit var resultList:ListView
+    private lateinit var searchedText: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity(), ConnectionInterface {
         reSearchButton = findViewById(R.id.research_button)
         resultContainer = findViewById(R.id.result_container)
         searchContainer = findViewById(R.id.search_container)
-        searchedText = findViewById(R.id.searched_string)
-        resultTextView = findViewById(R.id.result_string)
+        searchedText = findViewById(R.id.searched_text)
+        resultList = findViewById(R.id.result_list)
 
         searchButton.setOnClickListener { searchAPI() }
         reSearchButton.setOnClickListener { openSearchContainer() }
@@ -36,22 +36,26 @@ class MainActivity : AppCompatActivity(), ConnectionInterface {
 
     private fun searchAPI(){
         val searchString = editText.text.toString()
+        searchedText.text = searchString
         HttpGet(RequestMethods.GET,this).execute(searchString)
         openResultContainer()
     }
 
     private fun openResultContainer(){
-        searchContainer.visibility = View.GONE
+        searchContainer.visibility = View.INVISIBLE
         resultContainer.visibility = View.VISIBLE
+
     }
     private fun openSearchContainer(){
         searchContainer.visibility = View.VISIBLE
-        resultContainer.visibility = View.GONE
+        resultContainer.visibility = View.INVISIBLE
     }
 
     override fun onSuccess(result: String) {
         Log.e("Result",result)
-        JSONoperations.returnObjFromString(result)
+        var advice = JSONoperations.returnObjFromString(result)
+        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,advice.arrayOfSlips())
+        resultList.adapter = adapter
     }
 
     override fun onError(errorString: String) {
