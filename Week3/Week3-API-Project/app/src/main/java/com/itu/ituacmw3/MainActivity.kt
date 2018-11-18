@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
+import com.google.gson.Gson
+import com.itu.ituacmw3.Models.GsonAdvice
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity(), ConnectionInterface {
 
@@ -53,9 +56,23 @@ class MainActivity : AppCompatActivity(), ConnectionInterface {
 
     override fun onSuccess(result: String) {
         Log.e("Result",result)
-        var advice = JSONoperations.returnObjFromString(result)
-        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,advice.arrayOfSlips())
-        resultList.adapter = adapter
+        val wantGson = true
+
+        if(wantGson){
+            val gson = Gson()
+            try{
+                val GsonAdvice = gson.fromJson(result,GsonAdvice::class.java)
+                val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1, GsonAdvice.getAdviceList())
+                resultList.adapter = adapter
+            }catch( e:Exception ){
+                Log.e("Gson Convert","There is no advice")
+            }
+
+        }else{
+            val advice = JSONoperations.returnObjFromString(result)
+            val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,advice.arrayOfSlips())
+            resultList.adapter = adapter
+        }
     }
 
     override fun onError(errorString: String) {
