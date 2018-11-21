@@ -1,4 +1,5 @@
-# ITU ACM 2018 - Android Programming Study Group - Project - Week 1
+# ITU ACM 2018 - Android Programming Study Group
+## Project - Week 1
 
 It is the first week of the project so firstly we should decide what will be about. After finding a cool thing to work with, we will create the project and implement an API.
 
@@ -15,3 +16,14 @@ Some important notes:
 * Find a topic which has an API about it. Otherwise, we cannot create the app.
 * Be aware of the limitations of the API you are using. Some of the APIs have a limited number of requests.
 * Before parsing the response, know all possible responses and their structures and parse the response to right object so your app will not crash.   
+
+Some APIs you can work with:
+
+* [IMDB open API](http://www.omdbapi.com/)
+* [What Does Trump Think](https://whatdoestrumpthink.com/api-docs/index.html)
+* [Countries API](https://restcountries.eu/)
+* [Star Wars API](https://swapi.co/)
+* [Chuck Norris Facts](https://api.chucknorris.io/)
+* [Taco Fancy](https://github.com/evz/tacofancy-api)
+* [NASA API](https://api.nasa.gov/)
+* [More and more](https://apilist.fun/)
