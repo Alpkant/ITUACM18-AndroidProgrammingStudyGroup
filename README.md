@@ -21,7 +21,7 @@
 
 ### Goal
 
-The aim of this study group is to learn the fundamentals of the Android Application development using Kotlin programming language, using Git for your projects, mobile application design and so on. At the end of the course you will have solid base for Android application development and you will be able to create applications that you desired and you will be able to show off to your friends with your own applications :smiley: 
+The aim of this study group is to learn the fundamentals of the Android Application development using Kotlin programming language, using Git for your projects, mobile application design and so on. At the end of the course you will have solid base for Android application development and you will be able to create applications that you desired and you will be able to show off to your friends with your own applications :smiley:
 
 ### Syllabus
 
@@ -52,4 +52,5 @@ The aim of this study group is to learn the fundamentals of the Android Applicat
 
 [Must read article for Android Developers](https://medium.com/mindorks/a-roadmap-to-become-a-better-android-developer-3038cf7f8c8d)
 
-
+# Project
+Addition for the apps covered in the course, we will create another application inwhich all fundamentals of the Android Environment will be covered. For more information visit the [Project file](/Project)
