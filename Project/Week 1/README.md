@@ -3,7 +3,7 @@
 
 It is the first week of the project so firstly we should decide what will be about. After finding a cool thing to work with, we will create the project and implement an API.
 
-Here is the complete list of thing to do:
+Here is the complete list of things to do:
 
 1. Find a topic that you have interested in.
 2. Create a repository on GitHub.
