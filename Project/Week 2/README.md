@@ -1,5 +1,5 @@
 # ITU ACM 2018 - Android Programming Study Group
-## Project - Week 1
+## Project - Week 2
 
 Here is the second week of the project. Until now if you do the tasks of first week, then you have an application which can send requsts to API and parses the results using JSON parser methods.
 
