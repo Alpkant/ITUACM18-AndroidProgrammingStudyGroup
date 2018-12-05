@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:text="@string/homepage_plot" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/homepage_text"
+                    android:minHeight="125dp"
+                    android:id="@+id/home_page_plot_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_page_title_header_text"
+                style="@style/homepage_text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_title"
+                app:layout_constraintEnd_toEndOf="@+id/home_page_title_runtime_text"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/home_page_title_runtime_text"
+                style="@style/homepage_text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/homepage_runtime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_page_title_header_text" />
+
+            <TextView
+                android:id="@+id/home_page_title_year_text"
+                style="@style/homepage_text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepage_year"
+                app:layout_constraintEnd_toEndOf="@+id/home_page_title_runtime_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_page_title_runtime_text" />
+
+            <TextView
+                android:id="@+id/home_page_runtime_text"
+                style="@style/homepage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/home_page_title_runtime_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/home_page_title_runtime_text"
+                app:layout_constraintTop_toTopOf="@+id/home_page_title_runtime_text" />
+
+            <TextView
+                android:id="@+id/home_page_title_text"
+                style="@style/homepage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/home_page_title_header_text"
+                app:layout_constraintEnd_toEndOf="@+id/home_page_runtime_text"
+                app:layout_constraintStart_toEndOf="@+id/home_page_title_header_text"
+                app:layout_constraintTop_toTopOf="@+id/home_page_title_header_text" />
+
+            <TextView
+                android:id="@+id/home_page_year_text"
+                style="@style/homepage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/home_page_title_year_text"
+                app:layout_constraintEnd_toEndOf="@+id/home_page_runtime_text"
+                app:layout_constraintStart_toEndOf="@+id/home_page_title_year_text"
+                app:layout_constraintTop_toTopOf="@+id/home_page_title_year_text" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <ListView
+        android:id="@+id/home_page_ratings_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

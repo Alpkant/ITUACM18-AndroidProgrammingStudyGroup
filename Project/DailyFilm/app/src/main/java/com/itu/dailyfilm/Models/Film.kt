@@ -1,4 +1,4 @@
-package com.itu.dailyfilm
+package com.itu.dailyfilm.Models
 
 class Film(var title:String,
            var year:Int,

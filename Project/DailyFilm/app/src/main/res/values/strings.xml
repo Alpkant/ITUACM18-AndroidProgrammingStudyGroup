@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DailyFilm</string>
+
+    <!--Home Page Fragment-->
+    <string name="homepage_runtime">Runtime: </string>
+    <string name="homepage_title">Title: </string>
+    <string name="homepage_year">Year: </string>
+    <string name="homepage_plot">PLOT </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
